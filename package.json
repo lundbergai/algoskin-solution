@@ -7,7 +7,9 @@
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"deploy": "bash deploy.sh",
+		"deploy:production": "NODE_ENV=production npm run build && sudo cp -r dist/* /var/www/algo.skin/ && sudo chown -R www-data:www-data /var/www/algo.skin/ && sudo systemctl reload nginx"
 	},
 	"dependencies": {
 		"@hookform/resolvers": "^3.9.1",
