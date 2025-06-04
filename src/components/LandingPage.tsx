@@ -2,7 +2,7 @@ export default function LandingPage() {
 	return (
 		<div className="min-h-screen bg-[#0a0a20] text-white overflow-hidden relative">
 			{/* Main content */}
-			<div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
+			<div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 -mt-8">
 				<div className="text-center max-w-4xl mx-auto">
 					{/* Company name */}
 					<h1 className="text-5xl md:text-7xl font-light tracking-wider mb-4">
