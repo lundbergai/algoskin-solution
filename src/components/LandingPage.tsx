@@ -23,8 +23,8 @@ export default function LandingPage() {
 					</div>
 				</div>
 
-				{/* Contact section - moved up with fixed alignment */}
-				<div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
+				{/* Contact section - moved up on mobile */}
+				<div className="absolute bottom-16 md:bottom-8 left-1/2 transform -translate-x-1/2">
 					<a
 						href="mailto:viktor@lundberg.ai"
 						className="text-sm tracking-wider text-gray-400 hover:text-cyan-400 transition-colors duration-300 font-mono"
@@ -44,8 +44,8 @@ export default function LandingPage() {
 				<NeuralNetwork />
 			</div>
 
-			{/* Profit Chart - Repositioned and opacity adjusted */}
-			<div className="absolute bottom-[15%] left-[30%] w-[176px] h-[96px] md:w-[224px] md:h-[128px] opacity-80 pointer-events-none">
+			{/* Profit Chart - Much smaller on mobile, almost hidden */}
+			<div className="absolute bottom-[15%] left-[30%] w-[112px] h-[64px] md:w-[224px] md:h-[128px] opacity-80 md:opacity-80 pointer-events-none">
 				<ProfitChart />
 			</div>
 
