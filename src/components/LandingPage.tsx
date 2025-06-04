@@ -2,7 +2,7 @@ export default function LandingPage() {
 	return (
 		<div className="min-h-screen bg-[#0a0a20] text-white overflow-hidden relative">
 			{/* Main content */}
-			<div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 -mt-8">
+			<div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 -mt-32 md:-mt-8">
 				<div className="text-center max-w-4xl mx-auto">
 					{/* Company name */}
 					<h1 className="text-5xl md:text-7xl font-light tracking-wider mb-4">
@@ -44,8 +44,8 @@ export default function LandingPage() {
 				<NeuralNetwork />
 			</div>
 
-			{/* Profit Chart - Much smaller on mobile, almost hidden */}
-			<div className="absolute bottom-[15%] left-[30%] w-[112px] h-[64px] md:w-[224px] md:h-[128px] opacity-80 md:opacity-80 pointer-events-none">
+			{/* Profit Chart - Hidden on mobile, visible on desktop */}
+			<div className="hidden md:block absolute bottom-[15%] left-[30%] w-[224px] h-[128px] opacity-80 pointer-events-none">
 				<ProfitChart />
 			</div>
 
